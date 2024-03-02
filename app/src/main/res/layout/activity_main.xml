@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/Light_Blue">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/Hearts_layout"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_heart1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/heart"
+            />
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_heart2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/heart"
+            />
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_heart3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/heart"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main_MTV_points"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_toRightOf="@id/Hearts_layout"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:text="TextView" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/main_FAB_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:icon="@drawable/left"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="120dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/main_FAB_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:icon="@drawable/right"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="120dp"
+        android:layout_marginBottom="5dp"
+
+        />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/Game_Map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@id/Hearts_layout"
+        android:gravity="center"
+        >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/Left_Trial"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R0_C0"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+
+
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R1_C0"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R2_C0"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R3_C0"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R4_C0"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R5_C0"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R6_C0"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R7_C0"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+
+                />
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R8_C0"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R9_C0"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="20dp"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/Center_Left_Trial"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_toRightOf="@id/Left_Trial"
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R0_C1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R1_C1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R2_C1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R3_C1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R4_C1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R5_C1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R6_C1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R7_C1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R8_C1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R9_C1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="20dp"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/Center_Center_Trial"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R0_C2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R1_C2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R2_C2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R3_C2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R4_C2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R5_C2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R6_C2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R7_C2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R8_C2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R9_C2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="20dp"
+                />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/Center_Right_Trial"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R0_C3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R1_C3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R2_C3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R3_C3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R4_C3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R5_C3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R6_C3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R7_C3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R8_C3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R9_C3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="20dp"
+                />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/Right_Trial"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R0_C4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R1_C4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R2_C4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R3_C4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R4_C4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R5_C4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R6_C4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R7_C4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R8_C4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/R9_C4"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_marginBottom="20dp"
+                />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</RelativeLayout>

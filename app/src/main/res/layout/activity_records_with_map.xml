@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="Views.RecordsWithMap">
+
+
+    <FrameLayout
+        android:id="@+id/main_FRAME_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="20dp">
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/main_FRAME_map"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="20dp">
+
+    </FrameLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Fragments_MB_Return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return">
+
+    </com.google.android.material.button.MaterialButton>
+
+
+
+</LinearLayout>
